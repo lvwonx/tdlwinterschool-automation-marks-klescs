@@ -3,8 +3,6 @@ import { browser, $ } from "@wdio/globals";
 
 Given("I am on Login page", async function() {
     await browser.navigateTo("https://the-internet.herokuapp.com/login");
-
-    await browser.debug();
 });
 
 When('I enter a "tomsmith" username', async function() {
