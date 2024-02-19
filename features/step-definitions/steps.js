@@ -37,7 +37,7 @@ Then('I see a message "You logged into a secure area!"', async function() {
 
 Then('I see a message "Your username is invalid!"', async function() {
     const flashMessage = await $("#flash");
-    await expect(flashMessage).toHaveText(expect.stringContaining("Your username is invalid!"));
+    await expect(flashMessage).toHaveText(expect.stringContaining("Your user is invalid!"));
 });
 
 Then('I see the Logout button', async function() {
